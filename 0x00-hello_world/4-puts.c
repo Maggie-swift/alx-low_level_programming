@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 /** 
- * main - print a line of code using puts
- * description - input puts in C
+ * main - Entry point
+ * description - Programming
  * Return: Always 0 (Success)
  */
 
