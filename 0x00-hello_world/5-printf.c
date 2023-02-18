@@ -1,7 +1,6 @@
 #include <stdio.h>
 
 /**
- *
  *main - print a program using print
  *
  *description - use function provided
