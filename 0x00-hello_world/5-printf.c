@@ -1,11 +1,12 @@
 #include <stdio.h>
 
 /**
+ *
  *main - print a program using print
  *
  *description - use function provided
-
- *Return - Always (0)
+ *
+ *Return - Always (0) 
  */
 
 int main(void)
