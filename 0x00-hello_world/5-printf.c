@@ -2,9 +2,6 @@
 
 /**
  *main - print a program using print
- *
- *description - use function provided
- *
  *Return - Always (0)
  */
 
