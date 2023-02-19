@@ -1,7 +1,6 @@
 #include <stdio.h>
-/** 
- * main - Entry point
- * description - Print a line text provided
+/**
+ *main - Entry point
  * Return: Always 0 (Success)
  */
 
