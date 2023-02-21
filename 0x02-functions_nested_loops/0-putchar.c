@@ -1,14 +1,12 @@
 #include "main.h"
-#include <unistd.>
-
 /**
- *main - print _putchar
- *is written by maggie
- *Return: Always 0 (Success)
+ * main - print _putchar
+ * as is provided
+ * Return: 0
  */
-int main (void)
+int main(void)
 {
-	_putchar('_');
+	putchar('_');
 	_putchar('p');
 	_putchar('u');
 	_putchar('t');
