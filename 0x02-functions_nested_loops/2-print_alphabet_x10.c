@@ -1,25 +1,19 @@
 #include "main.h"
 
 /**
- *print_alphabet_x10 - Prints 10 times the alphabet, in lowercase,
- *Return: Always 0 (Success)
+ * _abs - Computes the absolute value of an integer.
+ * @n: The integer to check.
+ *
+ * Return: The absolute value of @n.
  */
-
-void print_alphabet_x10(void)
+int _abs(int n)
 {
-	char ch;
-	int i;
-	
-	i = (0);
-        while (i < 10)
+	if (n >= 0)
 	{
-		ch = 'a';
-		while (ch <= 'z')
-		{
-		       _putchar(ch);
-		       ch++;
-		}
-		       _putchar('\n');
-	               i++;
-	 }	
+		return (n);
+	}
+	else
+	{
+		return (-n);
+	}
 }
