@@ -7,7 +7,6 @@
 
 int main(void)
 {
-	i
         print_alphabet_x10();
         return (0);
 }
