@@ -42,3 +42,20 @@ void print_times_table(int n)
         _putchar('\n');
     }
 }
+
+int main(void)
+{
+    int tables[] = {2, 10, 13, 2, 0, 100};
+    int num_tables = sizeof(tables) / sizeof(tables[0]);
+    int i;
+
+    for (i = 0; i < num_tables; i++)
+    {
+        printf("Table of %d:\n", tables[i]);
+        print_times_table(tables[i]);
+        printf("\n");
+    }
+
+    return (0);
+}
+
