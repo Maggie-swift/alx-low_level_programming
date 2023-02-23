@@ -1,23 +1,19 @@
 #include "main.h"
 
 /**
- * print_most_numbers - checks for checks for a digit (0 through 9).
+ * print_most_numbers - print num except 2 and 4
  *
- * Return: Always 0.
+ * return: void
  */
+
 void print_most_numbers(void)
 {
- int c;
+	char c;
 
- for (c = 48; c < 58; c++)
- {
- if (c != 50)
- {
- if (c != 52)
- {
- _putchar(c);
- }
- }
- }
- _putchar('\n');
+	for (c = '0'; c <= '9'; c++)
+	{
+		if (!(c == '2' || c == '4'))
+			_putchar(c);
+	}
+	_putchar('\n');
 }
