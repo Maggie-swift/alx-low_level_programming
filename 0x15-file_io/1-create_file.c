@@ -1,11 +1,10 @@
-#include<stdio.h>
-#include<stlib.h>
+#include <stdio.h>
 #include "main.h"
 
 /**
  * create_file - creates a file
  * @filename: filename.
- * @text_content: content writed in the file.
+ * @text_content: content writen in the file.
  *
  * Return: 1 if it success. -1 if it fails.
  */
