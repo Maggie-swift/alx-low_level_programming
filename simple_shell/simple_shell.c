@@ -1,12 +1,13 @@
 #include "shell.h"
+
 /**
- * sshell - An infinite loop running simple shell
- * @ac: Arg count
- * @av: args passed to shell at beginning of prog
- * @env: Environment
- * Return: Void
+ * simple_shell - Infinite loop running simple shell
+ * @ac: Tallies arg
+ * @av: args passed to shell at beginning of program
+ * @env: the environment
+ * Return: void
  */
-void sshell(int ac, char **av, char **env)
+void simple_shell(int ac, char **av, char **env)
 {
 	char *li;
 	char **arg;
@@ -17,7 +18,7 @@ void sshell(int ac, char **av, char **env)
 
 	er = "Error";
 	do {
-		promptt();
+		prompt();
 		li = gline();
 		arg = s_line(li);
 		flow = b(arg[0], arg);
