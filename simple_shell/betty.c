@@ -12,4 +12,4 @@ int main(void)
 	printf("%s\n", message);
 
 	return (0);
-}
+i}
