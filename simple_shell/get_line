@@ -1,0 +1,68 @@
+#include "shell.h"
+#i#include <stdlib.h>
+#include <unistd.h>
+
+#define BUFFER_SIZE 1024
+
+/**
+ * _getline - Custom implementation of the getline function
+ * @lineptr: Pointer to store the line read
+ * @n: Pointer to store the size of the allocated buffer
+ * @stream: File stream to read from (stdin)
+ * Return: Number of characters read, -1 on failure or end of file
+ */
+ssize_t _getline(char **lineptr, size_t *n, FILE *stream)
+{
+    static char buffer[BUFFER_SIZE];
+    static ssize_t buffer_idx = 0;
+    static ssize_t chars_in_buffer = 0;
+    ssize_t chars_read = 0;
+    ssize_t i = 0;
+
+    if (lineptr == NULL || n == NULL)
+        return -1;
+
+    if (*lineptr == NULL || *n == 0)
+    {
+        *n = BUFFER_SIZE;
+        *lineptr = malloc(*n);
+        if (*lineptr == NULL)
+            return -1;
+    }
+
+    while (1)
+    {
+        if (buffer_idx == chars_in_buffer)
+        {
+            chars_in_buffer = read(STDIN_FILENO, buffer, BUFFER_SIZE);
+            buffer_idx = 0;
+
+            if (chars_in_buffer == 0)
+                return chars_read == 0 ? -1 : chars_read;
+            if (chars_in_buffer == -1)
+                return -1;
+        }
+
+        if (buffer[buffer_idx] == '\n')
+        {
+            (*lineptr)[i] = '\0';
+            buffer_idx++;
+            return chars_read + i;
+        }
+
+        (*lineptr)[i] = buffer[buffer_idx];
+        i++;
+        buffer_idx++;
+        chars_read++;
+
+        if (i >= *n)
+        {
+            *n += BUFFER_SIZE;
+            *lineptr = realloc(*lineptr, *n);
+            if (*lineptr == NULL)
+                return -1;
+        }
+    }
+
+    return -1;
+}
