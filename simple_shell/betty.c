@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * betty_c - Entry point of the program.
+ * betty_c -A code that passes Betty checks.
  *
  * Return: Always 0
  */
