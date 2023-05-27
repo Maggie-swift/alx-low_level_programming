@@ -1,7 +1,7 @@
 #ifndef SHELL_H
 #define SHELL_H
 
-/*ALL HEADER FILES*/
+/*HEADER FILES*/
 #include <stddef.h>
 #include <stdio.h>
 #include <string.h>
@@ -15,8 +15,8 @@
 #include <signal.h>
 
 
-/*another header file*/
-#include "datatype.h"
+/*other header file*/
+#include "datafront.h"
 
 extern char **environ;
 /*struct env_list_s *environ_list;*/
