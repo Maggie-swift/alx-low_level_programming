@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * betty_c -A code that passes Betty checks.
+ * betty_c - A code that passes Betty checks.
  *
  * Return: Always 0
  */
