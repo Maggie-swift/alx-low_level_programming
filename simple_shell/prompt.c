@@ -3,11 +3,11 @@
 #include <string.h>
 
 /**
- * main - Entry point of the program
+ * _prompt - Display a prompt and wait for the user to type a command.
  *
  * Return: Always 0
  */
-int main(void)
+int _prompt(void)
 {
 	char *message = "Hello, Betty!";
 	char *command = NULL;
