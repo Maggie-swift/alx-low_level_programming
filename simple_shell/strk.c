@@ -1,11 +1,11 @@
 #include "shell.h"
 
 /**
- * main - Entry point of the program
+ * _strk - not allowed to use strtok
  *
  * Return: Always 0
  */
-int main(void)
+int _strk(void)
 {
 	char *buffer = NULL;
 	size_t bufsize = 0;
